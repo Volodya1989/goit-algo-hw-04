@@ -20,14 +20,14 @@ def total_salary(path: str) -> tuple:
             except ValueError as e:
                 print(f'Error occured: {e}')
 
+    # returning salaries
     if not salaries:
         print(f'No salaries were found')
         return (0, 0)
     else:
         total_salary = sum(salaries)
         average_salary = total_salary//len(salaries)
-        print(
-            f'Total salary is {total_salary} and avarage salary is {average_salary}.')
+        print( f'Total salary is {total_salary} and avarage salary is {average_salary}.')
         return total_salary, average_salary
 
 

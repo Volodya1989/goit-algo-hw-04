@@ -53,19 +53,17 @@ def main():
                 print("Good bye!")
                 break
             case "hello":
-               print("How can I help you?")
+                print("How can I help you?")
             case "add":
-               print(add_contact(args, contacts))
+                print(add_contact(args, contacts))
             case "change":
-               print(change_contact(args, contacts))
+                print(change_contact(args, contacts))
             case "phone":
-              print(show_phone(args, contacts))
+                print(show_phone(args, contacts))
             case "all":
-                print(show_phone(contacts))
+                print(show_all(contacts))
             case _:
                 print("Invalid command. Please try again.")
-
-
 
 if __name__ == "__main__":
     main()
